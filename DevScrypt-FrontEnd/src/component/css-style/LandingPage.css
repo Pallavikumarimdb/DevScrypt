@@ -12,7 +12,7 @@
 .video-background-container {
     position: relative;
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;  
     overflow: hidden;
     padding-bottom: 80px;
   }
@@ -83,7 +83,7 @@
   .glass {
     width: 100px;
    height: 100px;
-    padding: 1rem;
+    padding: .5rem;
     color: rgb(20, 64, 90);
     text-align: center;
     background: rgba(255, 255, 255, 0.118);
@@ -96,6 +96,7 @@
     cursor: pointer;
     overflow: hidden;
     margin-right: 20px;
+    font-size: 15px;
 }
 
 .glass:before {
@@ -157,7 +158,7 @@
     margin-left: 10px;
     /* width: 470px; */
     font-weight: bolder;
-    font-size: 1vw;
+    font-size: .9vw;
     color: #161b21;
 
 }
@@ -215,10 +216,43 @@
 .Hot-jobs{
     float:right;
     margin-right: 10px;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.626);
+    /* background-color: rgba(255, 255, 255, 0.626); */
+    background-color: #161b2185;
 }
+
+.Hot-jobs{
+  text-align: left;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  /* background-color: #fed9ff; */
+  /* width: 600px; */
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+
+
+
+/* Hide scrollbar for WebKit browsers */
+.Hot-jobs::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar width */
+  background: transparent; /* Make background transparent */
+}
+
+/* Hide scrollbar for Firefox */
+.Hot-jobs {
+  scrollbar-width: thin; /* Hide scrollbar width in Firefox */
+  scrollbar-color: transparent transparent; /* Set both thumb and track colors to transparent */
+}
+
+
+
+
+
+
+
 
 
 .video-merge-shadow {
@@ -232,3 +266,6 @@
     box-shadow: 1px 1px 10px 1px #e77e7e;
     /* z-index: 1; */
    }
+
+
+   

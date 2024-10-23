@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react"
 import NavBar from "./NavBar.jsx"
 import TestimonialSection from "./testimonial.jsx"
 import ConnectedCards from "./ConnectedCards.jsx"
-import './css-style/LandingPage.css'
+import AppJob from '../component-LatestJob/JobApp.jsx';
+import './css-style/LandingPage.css';
 import sampleVideo from './assets/landing-assets/main-video3.mp4';
 import glasslogo1 from './assets/landing-assets/networking.png';
 import glasslogo2 from './assets/landing-assets/solana.png';
@@ -98,19 +99,23 @@ function LandingPage() {
 
                     </div>
                     <div className="part-2">
-                        <div className="Hot-jobs"></div>
+                        <div className="Hot-jobs">
+                        <AppJob></AppJob>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className="video-merge-shadow">
                 <div>
-                    <ConnectedCards></ConnectedCards>
                     <h1>Top Rated Verified Pro services in Crypto Development</h1>
+                    <div className="section-1">
+                        
+                    </div>
                 </div>
             </div>
             <TestimonialSection />
-
+            <ConnectedCards></ConnectedCards>
         </>
 
     );
