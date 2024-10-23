@@ -4,6 +4,12 @@ import img from '../assets/DevScrypt-logo1.png'
 
 function NavBar() {
 
+    const [isOpen, setIsOpen] = useState(false); // State to manage menu visibility
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen); // Toggle the state on hamburger click
+    };
+
 
     return (
         <div className='nav-layer-1'>
@@ -60,6 +66,8 @@ function NavBar() {
                         </div>
                     </div>
                 </nav>
+
+                
                 <div class="md:hidden" id="mobile-menu">
                     {/* <div class="space-y-1 px-2 pb-3 pt-2">
                             <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
@@ -68,36 +76,60 @@ function NavBar() {
                             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
                         </div> */}
 
-                    <div className='nav-2'>
-                        <div class="navbar">
-                            <div class="navbar-container container">
-                            <img className="first-logo-hid  rounded-full" src={img} alt="yyyyy" />
-                                <input type="checkbox" name="" id="" />
-                                <div class="hamburger-lines">
-                                    <span class="line line1"></span>
-                                    <span class="line line2"></span>
-                                    <span class="line line3"></span>
-                                </div>
-                                {/* <img className="first-logo-hid  rounded-full" src={img} alt="yyyyy" /> */}
-                                <ul class="menu-items">
-                                    <li><a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                                        aria-current="page">Dashboard</a>
-                                    </li>
-                                    <li><a href="#"
-                                        className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                                    </li>
-                                    <li><a href="#"
-                                        className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                                    </li>
-                                    <li><a href="#"
-                                        className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-                                    </li>
-                                </ul>
-                                <h2 class="logo">Seller-Mode</h2>
-                            </div>
-                        </div>
+<div className='nav-2'>
+            <div className='navbar'>
+                <div className='navbar-container container'>
+                    <img className='first-logo-hid rounded-full' src={img} alt='yyyyy' />
+                    <div className='hamburger-lines' onClick={toggleMenu}>
+                        <span className='line line1'></span>
+                        <span className='line line2'></span>
+                        <span className='line line3'></span>
                     </div>
+                    {/* Only show menu items when isOpen is true */}
+                    {isOpen && (
+                        <ul className='menu-items'>
+                            <li>
+                                <a
+                                    href='#'
+                                    className='rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white'
+                                    aria-current='page'
+                                >
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='#'
+                                    className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+                                >
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='#'
+                                    className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+                                >
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='#'
+                                    className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+                                >
+                                    Calendar
+                                </a>
+                            </li>
+                        </ul>
+                    )}
+                    <h2 className='logo'>Seller-Mode</h2>
                 </div>
+            </div>
+        </div>
+                </div>
+
+
             </div>
             <button type="button" className="side-button bg-opacity-0  ">Seller-Mode</button>
         </div>

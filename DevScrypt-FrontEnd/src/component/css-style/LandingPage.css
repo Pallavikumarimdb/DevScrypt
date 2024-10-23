@@ -8,13 +8,13 @@
     background-color:#0a0f11;
     /* padding: 30px; */
     text-align: center;
-    /* background: url("../assets/landing-assets/main-video.mp4") ; */
 }
 .video-background-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
+    padding-bottom: 80px;
   }
   
   .video-background {
@@ -36,10 +36,50 @@
     text-align: center;
     padding: 50px;
   }
+
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
+  .part-1 {
+    flex: 1;
+  }
+  
+  .part-2 {
+    margin-top: 70px;
+    flex: 1;
+  }
+  
+  .glass-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .glass {
+    width: calc(50% - 1rem); /* Adjust width as needed */
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .glass-container {
+      justify-content: center;
+    }
+  }
 
   /* .............................TRANSPARENT-CARD............................................ */
 
+  .parent-div{
+    margin-top: 115px;
+  }
   .glass {
     width: 100px;
    height: 100px;
@@ -55,7 +95,6 @@
     transform: translateY(-50%); /* Adjust only for vertical centering */
     cursor: pointer;
     overflow: hidden;
-    margin-top: 115px;
     margin-right: 20px;
 }
 
@@ -72,7 +111,8 @@
 }
 
 .glass:hover {
-    background-color: #50595d;
+    /* background-color: #50595d; */
+    background: linear-gradient(to right, rgba(105, 9, 9, 0), rgba(86, 57, 57, 0.5), rgba(113, 29, 8, 0));
     animation: tilt linear 5s infinite;
 }
 
@@ -110,15 +150,14 @@
 }
 /* .....................................AUTOTYPE............................................. */
 .autotype{
-    display:flex;
-    
+    display:flex;    
     justify-content: center;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     margin-left: 10px;
     /* width: 470px; */
     font-weight: bolder;
-    font-size: larger;
+    font-size: 1vw;
     color: #161b21;
 
 }
@@ -132,7 +171,7 @@
     /* border-radius: 100px; */
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
-    width: 50%;
+    width: 90%;
     /* height: 500px; */
     background-color: rgba(255, 255, 255, 0.626);
 
@@ -155,15 +194,41 @@
 }
 
 
+/* .............................SEARCH BAR............................................................................... */
+
+.input-box{
+    border-radius: 100px;
+}
+
+
+.search-button{
+    border-radius: 20px;
+}
+
+
+
+/* ..............................................................................................................................    */
+
+
+/* .........................job listion......................................................... */
+
+.Hot-jobs{
+    float:right;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.626);
+}
+
 
 .video-merge-shadow {
     /* position: absolute; */
-    height: 100px;
+    /* height: 100px; */
     /* top: 108vh; */
     bottom: 0;
     width: 100%; 
     /* Adjust width to control the shadow's spread  */
-    background: linear-gradient(to right, rgba(105, 9, 9, 0), rgba(86, 57, 57, 0.5), rgba(113, 29, 8, 0));
+    background: linear-gradient(to right, #101010, #2b231c, #0c0b0a);
     box-shadow: 1px 1px 10px 1px #e77e7e;
     /* z-index: 1; */
    }
