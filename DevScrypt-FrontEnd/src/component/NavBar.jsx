@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./css-style/NavBar.css"
-import img from '../assets/DevScrypt-logo1.png'
+import img from '../assets/logo1.png'
 
 function NavBar() {
 
@@ -25,14 +25,14 @@ function NavBar() {
                 </div> */}
                                 <div className="hidden md:flex space-x-6">
                                     <div className="flex space-x-4">
-                                        <a href="#" className="f1 rounded-md  px-3 py-2 text-sm font-medium hover:bg-gray-700 "
+                                        <a href="#" className=" nav-text rounded-md  px-3 py-2 text-sm font-medium hover:bg-gray-700 "
                                             aria-current="page">Dashboard</a>
                                         <a href="#"
-                                            className="f1 rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 ">Team</a>
+                                            className="  nav-text rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 ">Team</a>
                                         <a href="#"
-                                            className="f1 rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 ">Projects</a>
+                                            className=" nav-text rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 ">Projects</a>
                                         <a href="#"
-                                            className="f1 rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 ">Calendar</a>
+                                            className="  nav-text rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 ">Calendar</a>
                                         {/* <a href="#"
                                             className="rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Calendar</a> */}
                                     </div>

@@ -78,7 +78,7 @@ function TestimonialSection() {
                     ))}
                 </div>
             </div>
-                <video 
+                {/* <video 
                     preload="none"
                     className="video-background1"
                     src={sampleVideo1} // Example public video URL
@@ -86,7 +86,7 @@ function TestimonialSection() {
                     loop
                     muted
                     playsInline
-                />
+                /> */}
             </div>
             
         </>
