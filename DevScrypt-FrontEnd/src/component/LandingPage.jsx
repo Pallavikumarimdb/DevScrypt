@@ -203,6 +203,7 @@ function LandingPage() {
             </div>
             <hr></hr>
             <TestimonialSection />
+            <hr></hr>
             <ConnectedCards></ConnectedCards>
         </>
 
