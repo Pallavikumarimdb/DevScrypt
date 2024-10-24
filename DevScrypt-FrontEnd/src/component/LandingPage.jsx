@@ -13,7 +13,7 @@ import glasslogo3 from './assets/landing-assets/bitcoin.png';
 import glasslogo4 from './assets/landing-assets/ethereum.png';
 import glasslogo5 from './assets/landing-assets/litecoin.png';
 import glasslogo6 from './assets/landing-assets/ripple.png';
-import image from './assets/landing-assets/section2-prototype.png';
+import image from './assets/landing-assets/Profile.png';
 import { ReactTyped } from "react-typed";
 
 
@@ -24,6 +24,32 @@ function LandingPage() {
     const handleChange = (e) => {
         setQuery(e.target.value);
     };
+
+
+
+
+
+
+    const [rotationX, setRotationX] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      // Update the rotation based on scroll event
+      setRotationX((prevRotationX) => prevRotationX + event.deltaY / 50);
+    };
+
+    // Add scroll event listener
+    window.addEventListener('wheel', handleScroll);
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+    };
+  }, []);
+
+
+
+
 
     return (
         <>
@@ -134,23 +160,36 @@ function LandingPage() {
             <hr></hr>
 
 
+
+
+
             
 
             {/* .............................................SECTION 2 .......................................................... */}
             <div className="Working-model">
 
-                <div className="Working-model-section-1   ">
-                    <video
+                <div className="flex-item1 Working-model-section-1 "   style={{
+        transform: `rotateX(${rotationX}deg)`,
+        transition: 'transform 0.1s ease-out',
+      }}> 
+                    {/* <video
                         className="video-background2"
                         src={sampleVideo1} // Example public video URL
                         autoPlay
                         loop
                         muted
                         playsInline
-                    />
-                </div>
+                    /> */}
+                    <img  className="section-2image" src={image} alt="jjjjjjjjjjjjjs" />
+                     </div>
+     {/* <div className="flex-item1 Working-model-section-1"
+      style={{
+        transform: `rotateX(${rotationX}deg)`,
+        transition: 'transform 0.1s ease-out',
+      }}>
+    </div>   */}
 
-                <div className="Working-model-section-2   ">
+                <div className="flex-item1 Working-model-section-2   ">
 
                     <p className="Working-model-head">How Does CryptoFreelancer Works ?</p>
                     <div className="Working-model-head-desc" >Marketplace with over 7,000 unique NFT rtworks and mare 1,000 independent artists
@@ -164,7 +203,7 @@ function LandingPage() {
             </div>
             <hr></hr>
             <TestimonialSection />
-            {/* <ConnectedCards></ConnectedCards> */}
+            <ConnectedCards></ConnectedCards>
         </>
 
     );
