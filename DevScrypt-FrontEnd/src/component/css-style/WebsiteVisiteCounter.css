@@ -1,0 +1,56 @@
+
+.cn{
+    /* font-size: 2vw; */
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 15vw;
+    display: inline-block;
+}
+
+.cn-main{
+    float: right;
+    /* font-size: 7vw ; */
+}
+
+.count-main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding-bottom: 50px;
+}
+
+
+.count1{
+    display: inline-block;
+}
+
+
+.main1{
+    background: radial-gradient(circle at bottom, #0f0c29, #302b63, #24243e);
+    text-align: center;
+}
+
+.count-headtag{
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+p{
+    font-size: 15px;;
+}
+.inner-count1{
+    font-size: 22px;
+}
+
+
+.complogo{
+    margin: 10px;
+    display: inline-block;
+}
+
+/* style={{ height: '300px', backgroundColor: 'white', color:'black' }}  */

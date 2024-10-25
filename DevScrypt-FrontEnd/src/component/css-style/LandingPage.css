@@ -11,6 +11,7 @@
 .landingpage{
     width: 100%;
     background-color: #000000;
+    background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
     /* padding: 30px; */
     text-align: center;
 }
@@ -301,6 +302,7 @@
     /* background-image: url("../assets/landing-assets/bg2-r.png");
     background-size: cover;
     background-repeat: no-repeat; */
+     background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);;
   }
 
 

@@ -3,6 +3,9 @@ import NavBar from "./NavBar.jsx"
 import TestimonialSection from "./testimonial.jsx"
 import ConnectedCards from "./ConnectedCards.jsx"
 import AppJob from '../component-LatestJob/JobApp.jsx';
+import Developertestimonial from "./Developertestimonial.jsx";
+import WebsiteVisiteCounter from "./WebsiteVisitCounter.jsx";
+
 import './css-style/LandingPage.css';
 import sampleVideo from './assets/landing-assets/main-video5.mp4';
 import VideoCard from './assets/landing-assets/main-video4.mp4';
@@ -35,7 +38,7 @@ function LandingPage() {
   useEffect(() => {
     const handleScroll = (event) => {
       // Update the rotation based on scroll event
-      setRotationX((prevRotationX) => prevRotationX + event.deltaY / 50);
+      setRotationX((prevRotationX) => prevRotationX + event.deltaY / 10);
     };
 
     // Add scroll event listener
@@ -189,6 +192,23 @@ function LandingPage() {
       }}>
     </div>   */}
 
+
+
+    
+
+<div className="relative h-auto flex items-center justify-center">
+  {/* Other content can go here */}
+
+  {/* Responsive Gradient Line */}
+  <span
+    className="absolute w-2/3 h-px md:h-2/3 md:w-px"
+    style={{
+      backgroundImage: 'linear-gradient(to top, transparent, #d4d4d4, transparent)',
+    }}
+    aria-hidden="true"
+  ></span>
+</div>
+
                 <div className="flex-item1 Working-model-section-2   ">
 
                     <p className="Working-model-head">How Does CryptoFreelancer Works ?</p>
@@ -199,11 +219,15 @@ function LandingPage() {
                     <button type="button" className="working-side-button1 bg-opacity-0  ">Seller-Mode</button>
                     <button type="button" className="working-side-button2 bg-opacity-0  ">Seller-Mode</button>
                 </div>
+                
 
             </div>
+            {/* <hr></hr> */}
+            <Developertestimonial/>
             <hr></hr>
             <TestimonialSection />
             <hr></hr>
+            <WebsiteVisiteCounter></WebsiteVisiteCounter>   
             <ConnectedCards></ConnectedCards>
         </>
 

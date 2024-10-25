@@ -10,7 +10,7 @@ function App() {
     
     <>
     <LandingPage></LandingPage>
-    <AppJob></AppJob>
+    {/* <AppJob></AppJob> */}
     
     </>
   )

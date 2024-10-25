@@ -123,7 +123,7 @@ function NavBar() {
                             </li>
                         </ul>
                     )}
-                    <h2 className='logo'>Seller-Mode</h2>
+                    <h2 className='logo'>Sign Up</h2>
                 </div>
             </div>
         </div>
@@ -131,7 +131,8 @@ function NavBar() {
 
 
             </div>
-            <button type="button" className="side-button bg-opacity-0  ">Seller-Mode</button>
+            <button type="button" className="side-button bg-opacity-0  ">Sign Up</button>
+            {/* <button type="button" className="side-button bg-opacity-0  ">Log In</button> */}
         </div>
     );
 }

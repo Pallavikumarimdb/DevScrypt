@@ -1,55 +1,147 @@
 import React from 'react';
 import './css-style/ConnectedCards.css';
+import VideoCard1 from './assets/landing-assets/main-video.mp4';
+import VideoCard2 from './assets/landing-assets/main-video3.mp4';
+import VideoCard3 from './assets/landing-assets/main-video2.mp4';
+
+import img1 from './assets/landing-assets/bg7.jpg';
+import img2 from './assets/landing-assets/bg8.jpg';
+import img3 from './assets/landing-assets/bg6.png';
 
 function ConnectedCards() {
-    return (
-        <div className="cards-container-vertical">
+  return (
+    <div className="cards-container-vertical">
+      {/* <div className='connectecardhead'>
+      <h1>Made on DevScrypt</h1>
+      </div> */}
+      
+      <div className='connected-card-flex-main grid grid-cols-2 sm:grid-cols-2  lg:grid-cols-4 gap-2'>
 
-            {/* <svg width="100" height="100">
-                {/* <path d="M50,0 L50,100" stroke="black" fill="transparent" stroke-width="2" /> */}
-                {/* <path d="M50,0 L50,100" fill="transparent" stroke-width="2" /> */}
-            {/* </svg> */} 
+        <div className='connected-card-flex-1'> 
+        <div>
+      <video
+                    className="br connected-video1"
+                    src={VideoCard1} // Example public video URL
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
+                
+                <video
+                    className="br connected-video2"
+                    src={VideoCard2} // Example public video URL
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
 
-
-            <div className="card">
-                <h3>Card 1</h3>
-                <p>This is the first card.</p>
-            </div>
-
-            {/* SVG for curved wire */}
-            <svg width="100" height="100">
-                {/* <path d="M50,0 Q75,50 50,100"  strokeWidth="2" fill="none" /> */}
-                <path d="M50,0 L50,100" fill="transparent" stroke-width="2" />
-                <circle cx="50" cy="50" r="4" fill="#161b21" />
-                {/* <circle cx="50" cy="100" r="3" fill="green" /> */}
-            </svg>
-
-
-            <div className="card">
-                <h3>Card 2</h3>
-                <p>This is the second card.</p>
-            </div>
-
-
-
-
-
-
-
-
-{/* .................................................future use.................................... */}
-
-    {/* <div className="relative h-64 flex items-center justify-center">
-      {/* Other content can go here */}
-
-      {/* Gradient line */}
-      {/* <span className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-200/100 via-zinc-200/100 to-transparent" aria-hidden="true"></span> */}
-    {/* </div> */}
-{/* ........................................................................................................... */}
-
-
+                <p className='text-conn'>hey   mshdff jk</p>
+      </div>
         </div>
-    );
+
+
+
+        <div className='connected-card-flex-2'>
+        <div>
+      <img className='br' src={img1} alt="" />
+      </div>
+        </div>
+
+
+        <div className=' connected-card-flex-3'>
+        <div>
+      <video
+                    className="br connected-video3"
+                    src={VideoCard3} // Example public video URL
+                    autoPlay
+                    // loop
+                    muted
+                    playsInline
+                />
+
+<img className='br img-cord' src={img3} alt="" />
+
+      </div>
+        </div>
+
+
+        <div className='connected-card-flex-4'>
+        <div>
+      <img className='br' src={img2} alt="" />
+      </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
+      <div className=" lineconn1 h-32  justify-center">
+        <span
+          className="absolute w-2/3 h-px md:h-2/3 md:w-px"
+          style={{
+            backgroundImage: 'linear-gradient(to top, transparent, #d4d4d4, transparent)',
+          }}
+          aria-hidden="true"
+        ></span>
+      </div> */}
+
+
+
+
+
+
+
+
+
+      <div className=" lineconn1  flex items-center justify-center">
+        {/* Other content can go here */}
+
+        {/* Responsive Gradient Line */}
+        <span
+          className="absolute w-2/3 h-px md:h-2/3 md:w-px"
+          style={{
+            backgroundImage: 'linear-gradient(to top, transparent, #d4d4d4, transparent)',
+          }}
+          aria-hidden="true"
+        ></span>
+      </div>
+
+
+
+
+
+
+
+
+
+      <hr></hr>
+
+
+
+
+
+    </div>
+  );
 }
 
 export default ConnectedCards;
