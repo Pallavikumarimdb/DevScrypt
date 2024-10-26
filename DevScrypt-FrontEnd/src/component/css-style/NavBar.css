@@ -5,7 +5,7 @@
 
 .nav-2{
     margin-top: 0px;;
-    background-color: #161b21;
+    /* background-color: #161b21; */
     border-radius: 70px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 10px 1px #888888;
@@ -21,12 +21,13 @@ nav{
     padding: 10px;
     margin-top: 0px;;
     background-color: #161b21;
+    opacity: .8;
     margin-bottom: 20px;
     /* box-shadow: 1px 1px 10px 1px #888888; */
     /* box-shadow: h-offset v-offset blur spread color; */
     /* color: #0088d6; */
     color: aliceblue;
-    border-radius: 0px;
+    border-radius: 9px;
     /* border-color: #e25a8f */
     /* border-width: 3px; */
     
@@ -64,7 +65,7 @@ nav{
     color: #3eabe9;
     color: #010000;
     font-weight: 600;
-    border-radius: 0px;
+    border-radius: 5px;
     /* background-color: #161b21; */
     background-color: #1c90fc;;
     border-color: aliceblue;

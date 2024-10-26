@@ -36,8 +36,6 @@ function ConnectedCards() {
                     muted
                     playsInline
                 />
-
-                <p className='text-conn'>hey   mshdff jk</p>
       </div>
         </div>
 
@@ -56,7 +54,7 @@ function ConnectedCards() {
                     className="br connected-video3"
                     src={VideoCard3} // Example public video URL
                     autoPlay
-                    // loop
+                    loop
                     muted
                     playsInline
                 />
@@ -69,7 +67,7 @@ function ConnectedCards() {
 
         <div className='connected-card-flex-4'>
         <div>
-      <img className='br' src={img2} alt="" />
+      <img className=' img-cord2 br' src={img2} alt="" />
       </div>
         </div>
 
@@ -113,18 +111,18 @@ function ConnectedCards() {
 
 
 
-      <div className=" lineconn1  flex items-center justify-center">
+      {/* <div className=" lineconn1  flex items-center justify-center"> */}
         {/* Other content can go here */}
-
         {/* Responsive Gradient Line */}
-        <span
+        {/* <span
           className="absolute w-2/3 h-px md:h-2/3 md:w-px"
           style={{
             backgroundImage: 'linear-gradient(to top, transparent, #d4d4d4, transparent)',
           }}
           aria-hidden="true"
         ></span>
-      </div>
+        <p>hhhhhhhhhhhhhhhhhhhhh</p>
+      </div> */}
 
 
 

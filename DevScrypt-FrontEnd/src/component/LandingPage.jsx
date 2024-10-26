@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from "react"
+
 import NavBar from "./NavBar.jsx"
 import TestimonialSection from "./testimonial.jsx"
 import ConnectedCards from "./ConnectedCards.jsx"
 import AppJob from '../component-LatestJob/JobApp.jsx';
 import Developertestimonial from "./Developertestimonial.jsx";
 import WebsiteVisiteCounter from "./WebsiteVisitCounter.jsx";
+import Footer from "./Footer.jsx";
 
 import './css-style/LandingPage.css';
 import sampleVideo from './assets/landing-assets/main-video5.mp4';
 import VideoCard from './assets/landing-assets/main-video4.mp4';
 import sampleVideo1 from './assets/landing-assets/main-video3.mp4';
+
+import bgv1 from './assets/landing-assets/bgv1.mp4';
+
 import glasslogo1 from './assets/landing-assets/networking.png';
 import glasslogo2 from './assets/landing-assets/solana.png';
 import glasslogo3 from './assets/landing-assets/bitcoin.png';
@@ -35,20 +40,23 @@ function LandingPage() {
 
     const [rotationX, setRotationX] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = (event) => {
-      // Update the rotation based on scroll event
-      setRotationX((prevRotationX) => prevRotationX + event.deltaY / 10);
-    };
+    useEffect(() => {
+        const handleScroll = (event) => {
+            // Update the rotation based on scroll event
+            setRotationX((prevRotationX) => prevRotationX + event.deltaY / 10);
+        };
 
-    // Add scroll event listener
-    window.addEventListener('wheel', handleScroll);
+        // Add scroll event listener
+        window.addEventListener('wheel', handleScroll);
 
-    // Clean up the event listener when component unmounts
-    return () => {
-      window.removeEventListener('wheel', handleScroll);
-    };
-  }, []);
+        // Clean up the event listener when component unmounts
+        return () => {
+            window.removeEventListener('wheel', handleScroll);
+        };
+    }, []);
+
+
+
 
 
 
@@ -60,9 +68,9 @@ function LandingPage() {
                 <NavBar></NavBar>
                 <video
                     className="video-background"
-                    src={sampleVideo} // Example public video URL
+                    src={bgv1} // Example public video URL
                     autoPlay
-                    // loop
+                    loop
                     muted
                     playsInline
                 />
@@ -127,8 +135,8 @@ function LandingPage() {
                                         <img className="glass-logo" src={glasslogo5} alt="" />
                                         <p>Litecoin Developer</p>
                                     </div>
-                                    <div class="glass">
-                                        <img className="glass-logo" src={glasslogo6} alt="" />
+                                    <div class="glass glr">
+                                        <img className="glass-logo " src={glasslogo6} alt="" />
                                         <p>Ripple Developer</p>
                                     </div>
                                 </div>
@@ -142,17 +150,48 @@ function LandingPage() {
                             <AppJob></AppJob>
                         </div> */}
 
-                            <div className=" Working-model-section-0   ">
+                            {/* <div className=" Working-model-section-0   ">
                                 <video
                                     className="video-background3"
-                                    src={VideoCard} // Example public video URL
+                                    src={VideoCard}
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
                                 />
-                            </div>
-                            {/* <img src={image} alt="jjjjjjjjjjjjjs" /> */}
+                            </div> */}
+                            {/* <img src={image} alt="jjjjjjjjjjjjjs" className="left-img "/> */}
+
+                            <section className="bottom-section">
+        <div className="overlay">
+          <div className="testimonial">
+            <h3>A whole world of freelance talent at your fingertips</h3>
+            <p className="author">
+              <strong>Clear, transparent pricing</strong><br />
+              Pay per project or by the hour (Pro). Payments only get released when you approve.
+            </p>
+
+            <p className="author">
+              <strong>Quality work done faster</strong><br />
+              Filter to find the right freelancers quickly and get great work delivered in no time, every time.
+            </p>
+           
+            <p className="author">
+              <strong>Over 700 categories</strong><br />
+              Get results from skilled freelancers from all over the world, for every task, at any price point.
+            </p>
+
+            <p className="author">
+              <strong>24/7 award-winning support</strong><br />
+              Chat with our team to get your questions answered or resolve any issues with your orders.
+            </p>
+            <a href="/" className="read-story">Read Dribbble's story →</a>
+          </div>
+        </div>
+      </section>
+
+
+
                         </div>
                     </div>
 
@@ -166,15 +205,15 @@ function LandingPage() {
 
 
 
-            
+
 
             {/* .............................................SECTION 2 .......................................................... */}
             <div className="Working-model">
 
-                <div className="flex-item1 Working-model-section-1 "   style={{
-        transform: `rotateX(${rotationX}deg)`,
-        transition: 'transform 0.1s ease-out',
-      }}> 
+                <div className="flex-item1 Working-model-section-1 " style={{
+                    transform: `rotateX(${rotationX}deg)`,
+                    transition: 'transform 0.1s ease-out',
+                }}>
                     {/* <video
                         className="video-background2"
                         src={sampleVideo1} // Example public video URL
@@ -183,9 +222,9 @@ function LandingPage() {
                         muted
                         playsInline
                     /> */}
-                    <img  className="section-2image" src={image} alt="jjjjjjjjjjjjjs" />
-                     </div>
-     {/* <div className="flex-item1 Working-model-section-1"
+                    <img className="section-2image" src={image} alt="jjjjjjjjjjjjjs" />
+                </div>
+                {/* <div className="flex-item1 Working-model-section-1"
       style={{
         transform: `rotateX(${rotationX}deg)`,
         transition: 'transform 0.1s ease-out',
@@ -194,20 +233,20 @@ function LandingPage() {
 
 
 
-    
 
-<div className="relative h-auto flex items-center justify-center">
-  {/* Other content can go here */}
 
-  {/* Responsive Gradient Line */}
-  <span
-    className="absolute w-2/3 h-px md:h-2/3 md:w-px"
-    style={{
-      backgroundImage: 'linear-gradient(to top, transparent, #d4d4d4, transparent)',
-    }}
-    aria-hidden="true"
-  ></span>
-</div>
+                <div className="relative h-auto flex items-center justify-center">
+                    {/* Other content can go here */}
+
+                    {/* Responsive Gradient Line */}
+                    <span
+                        className="absolute w-2/3 h-px md:h-2/3 md:w-px"
+                        style={{
+                            backgroundImage: 'linear-gradient(to top, transparent, #d4d4d4, transparent)',
+                        }}
+                        aria-hidden="true"
+                    ></span>
+                </div>
 
                 <div className="flex-item1 Working-model-section-2   ">
 
@@ -219,16 +258,17 @@ function LandingPage() {
                     <button type="button" className="working-side-button1 bg-opacity-0  ">Seller-Mode</button>
                     <button type="button" className="working-side-button2 bg-opacity-0  ">Seller-Mode</button>
                 </div>
-                
+
 
             </div>
             {/* <hr></hr> */}
-            <Developertestimonial/>
+            <Developertestimonial />
             <hr></hr>
             <TestimonialSection />
             <hr></hr>
-            <WebsiteVisiteCounter></WebsiteVisiteCounter>   
+            <WebsiteVisiteCounter></WebsiteVisiteCounter>
             <ConnectedCards></ConnectedCards>
+            <Footer></Footer>
         </>
 
     );

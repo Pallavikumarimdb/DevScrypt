@@ -19,7 +19,7 @@
   /* background-color: #0c0b0a; */
     position: relative;
     width: 100%;
-    height: 750px;  
+    /* height: 750px;   */
     overflow: hidden;
     padding-bottom: 80px;
   }
@@ -80,7 +80,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .flex-container {
     flex-direction: column; /* Stack the divs vertically */
   }
@@ -88,6 +88,8 @@
   .flex-item {
     width: 100%; /* Each div takes full width */
     height: auto;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -102,7 +104,11 @@
 
 
 
-
+.left-img{
+  margin-top: 50px;
+  opacity: .8;
+  border-radius: 8px;
+}
 
   .video-background3{
     /* position: absolute; */
@@ -118,14 +124,6 @@
     justify-content: space-between;
   }
   
-  .glass {
-    width: calc(50% - 1rem); /* Adjust width as needed */
-    margin: 0.5rem;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    text-align: center;
-  }
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
@@ -162,6 +160,8 @@
     font-size: 12px;
     font-weight: bold;
 }
+
+
 
 .glass:before {
     content: '';
@@ -213,12 +213,38 @@
     width: 30px;
     height: 30px;
 }
+
+
+@media (max-width: 900px) {
+  .glass {
+    font-size: 10px;
+    width: 60px;
+   height: 60px;
+   padding: 0rem;
+   margin-right: 10px;
+  }
+  .parent-div{
+    margin-top: 70px;
+    
+  }
+  p{
+    font-size: 10px;
+  }
+  .glass-logo{
+    width: 20px;
+    height: 20px;
+}
+.glr{
+  display:none
+}
+
+}
 /* .....................................AUTOTYPE............................................. */
 .autotype{
     display:flex;    
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     margin-left: 10px;
     /* width: 470px; */
     font-weight: bolder;
@@ -230,12 +256,13 @@
 
 @media (max-width: 768px) {
   .autotype {
-    font-size: .5vw;
+    font-size: 10px;
+
   }
 }
 
 .autotype-head{
-    /* margin-top: 40px; */
+    margin-top: 40px;
     justify-content: center;
     margin-left:20px;
     /* box-shadow: 1px 1px 10px 1px #e77e7e; */
@@ -253,6 +280,18 @@
     /* border: 2px solid rgb(242, 242, 242); */
     /* box-shadow: 0px 0px 100px 20px rgba(213, 201, 201, 0.2); */
 
+}
+
+
+@media (max-width: 768px) {
+  .autotype-head {
+    margin-top: 0px;
+  }
+  .autotype {
+    font-size: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+  }
 }
 
 .devScrypt-name{
@@ -285,7 +324,88 @@
 
 
 
+
+
+
+.overlay {
+  
+  margin-top: 70px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-right: 50px;
+  /* max-width: 300px; */
+}
+
+
+
+.testimonial h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.read-story {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-story:hover {
+  color: #00aaff; /* Light blue on hover */
+}
+
+@media (max-width: 900px) {
+  .overlay {
+    margin-top: 30px; /* Stack the divs vertically */
+    margin-left: 0%;
+    margin-right: 0px;
+  }
+  .testimonial h3 {
+    font-size: 2vw;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .author {
+    font-size: 2vw;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* ...............................SECTION  1 FOR SMALER SCREEN...................................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ..............................................................................................................................    */
+
+
 
 
 
@@ -302,7 +422,7 @@
     /* background-image: url("../assets/landing-assets/bg2-r.png");
     background-size: cover;
     background-repeat: no-repeat; */
-     background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);;
+     /* background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);; */
   }
 
 
