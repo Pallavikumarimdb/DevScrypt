@@ -4,6 +4,7 @@ import VideoCard1 from './assets/landing-assets/main-video.mp4';
 import VideoCard2 from './assets/landing-assets/main-video3.mp4';
 import VideoCard3 from './assets/landing-assets/main-video2.mp4';
 
+import img4 from './assets/landing-assets/prototype.png';
 import img1 from './assets/landing-assets/bg7.jpg';
 import img2 from './assets/landing-assets/bg8.jpg';
 import img3 from './assets/landing-assets/bg6.png';
@@ -28,14 +29,17 @@ function ConnectedCards() {
                     playsInline
                 />
                 
-                <video
+                {/* <video
                     className="br connected-video2"
                     src={VideoCard2} // Example public video URL
                     autoPlay
                     loop
                     muted
                     playsInline
-                />
+                /> */}
+                
+                <img className='br1' src={img4} alt="" />
+
       </div>
         </div>
 
@@ -67,7 +71,7 @@ function ConnectedCards() {
 
         <div className='connected-card-flex-4'>
         <div>
-      <img className=' img-cord2 br' src={img2} alt="" />
+      <img className=' imglast img-cord2 br' src={img2} alt="" />
       </div>
         </div>
 

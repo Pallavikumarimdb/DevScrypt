@@ -12,6 +12,7 @@
     /* z-index: 1;  */
     color: black;
     background: rgba(255, 255, 255, 0.118);
+    
 }
 
 .testimonial-desc{
@@ -63,6 +64,12 @@
     position: relative;
     padding-bottom: 80px;
     overflow: hidden;
+    background: linear-gradient(
+        to bottom,           /* direction */
+        #06060c 70%,         /* from-transparent */
+        #011421 ,          /* via-black/70 */
+        #0080d6               /* to-black */
+      );
   }
   
   .video-background1 {

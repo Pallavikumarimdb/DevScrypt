@@ -5,6 +5,7 @@
   border:#ccc;
 
   overflow-x: hidden;
+  overflow-y: hidden;
   /* margin-top: 50px; */
   /* margin-bottom: 50px; */
 }
@@ -59,19 +60,24 @@
     font-size: 11px;
   }
 
-
-
+.br1{
+  height: 240px;
+  border-radius: 5px;
+}
 
   .connectecardhead{
     margin-left: 50px;
   }
 
 
-
 .img-cord{
-  height: 280px;
+  height: 250px;
   margin-left: 20%;
   opacity: .5;
+}
+
+.imglast{
+ height:450px ; 
 }
 
 .img-cord2{

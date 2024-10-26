@@ -64,7 +64,7 @@ function LandingPage() {
 
     return (
         <>
-            <div className="video-background-container">
+            <div className="video-background-container bg-gradient-to-b from-transparent via-black/70 to-black">
                 <NavBar></NavBar>
                 <video
                     className="video-background"
@@ -165,26 +165,32 @@ function LandingPage() {
                             <section className="bottom-section">
         <div className="overlay">
           <div className="testimonial">
-            <h3>A whole world of freelance talent at your fingertips</h3>
+            <div className="sec1-right">A whole world of freelance talent at your fingertips</div>
+            <div className="tex1">
             <p className="author">
               <strong>Clear, transparent pricing</strong><br />
               Pay per project or by the hour (Pro). Payments only get released when you approve.
             </p>
+            </div>
 
+            <div className="tex1">
             <p className="author">
               <strong>Quality work done faster</strong><br />
               Filter to find the right freelancers quickly and get great work delivered in no time, every time.
             </p>
-           
+            </div>
+            <div className="tex1">
             <p className="author">
               <strong>Over 700 categories</strong><br />
               Get results from skilled freelancers from all over the world, for every task, at any price point.
             </p>
-
+            </div>
+            <div className="tex1">
             <p className="author">
               <strong>24/7 award-winning support</strong><br />
               Chat with our team to get your questions answered or resolve any issues with your orders.
             </p>
+            </div>
             <a href="/" className="read-story">Read Dribbble's story →</a>
           </div>
         </div>
@@ -257,6 +263,18 @@ function LandingPage() {
 
                     <button type="button" className="working-side-button1 bg-opacity-0  ">Seller-Mode</button>
                     <button type="button" className="working-side-button2 bg-opacity-0  ">Seller-Mode</button>
+
+                    <button type="button" className="working-side-button3  ">
+                        
+            <h3>Framer felt like a natural fit</h3>
+            <p className="author">
+              <strong>Andrew Austin</strong><br />
+              VP of Product at Dribbble
+            </p>
+            <a href="/" className="read-story">Read Dribbble's story →</a>
+            </button>
+
+
                 </div>
 
 

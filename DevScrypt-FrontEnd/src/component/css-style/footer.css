@@ -19,3 +19,14 @@ a{
 .footer{
     /* background-color: aquamarine; */
 }
+
+
+.footermain {
+    background: linear-gradient(
+      to bottom,           /* direction */
+      #302b63,         /* from-transparent */
+      #24243e,  /* via-black/70 */
+      black                /* to-black */
+    );
+  }
+  

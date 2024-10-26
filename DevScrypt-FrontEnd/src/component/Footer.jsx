@@ -2,7 +2,7 @@ import React from 'react';
 import './css-style/footer.css';
 const Footer = () => {
   return (
-    <>
+    <div className='footermain'>
     <footer className="footer text-white py-10">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Subscription Section */}
@@ -141,7 +141,7 @@ const Footer = () => {
       >devScrypt</a>
     </div>
   </footer>
-</>
+</div>
   );
 };
 
