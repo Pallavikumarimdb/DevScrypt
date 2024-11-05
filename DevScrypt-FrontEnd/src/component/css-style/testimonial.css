@@ -1,46 +1,43 @@
+.testo-div {
+  /* background-image: url("../assets/landing-assets/bg1.png"); */
+  /* background: url("../assets/landing-assets/bg1.png") left top no-repeat, url("../assets/landing-assets/bg5.png") right bottom no-repeat; */
+  background-size: cover;
+  background-repeat: repeat-y;
+  /* margin-top: 80px; */
+  color: rgb(255, 250, 243);
+  position: relative;
+  transform: rotate(40);
+  height: 730px;
+  overflow: hidden;
+  text-align: center;
+}
 
 
-
-  .testo-div{
-         background-image: url("../assets/landing-assets/bg1.png");
-         background: url("../assets/landing-assets/bg1.png") left top no-repeat, url("../assets/landing-assets/bg5.png") right bottom no-repeat;
-         background-size: cover;
-     background-repeat:repeat-y;
-    /* margin-top: 80px; */
-    color: rgb(255, 250, 243);
-    position: relative;
-    transform: rotate(40);
-    height: 730px;
-    overflow: hidden;
-    text-align: center;
-  }
-
-
-  .testo-div1{
-margin-top: 80px;
+.testo-div1 {
+  margin-top: 80px;
 
 }
 
 
-  .testo-text{
-    text-align: center;
-    width: 50%;
-    margin-left: 25%;
-  }
-  
-
-  
+.testo-text {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
 
 
-.testo-but{
-    background-color: #1c90fc;
-    margin: 20px;
-    margin-top: 12%;
-    border-radius: 0;
-    width: 200px;
-  }
 
-  .testo-but:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-  }
+
+
+.testo-but {
+  background-color: #1c90fc;
+  margin: 20px;
+  margin-top: 12%;
+  border-radius: 0;
+  width: 200px;
+}
+
+.testo-but:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}

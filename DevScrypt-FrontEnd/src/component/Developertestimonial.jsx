@@ -113,7 +113,7 @@ function Developertestimonial() {
                             rating={t.rating}
                         />
                     ))}
-                      <button className='loadbutton'>Load More >> </button>
+                      <button className='loadbutton'>Load More </button>
                 </div>
             </div>
                 {/* <video 

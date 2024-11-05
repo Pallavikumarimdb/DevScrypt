@@ -441,10 +441,6 @@
     overflow: hidden;
     padding-bottom: 80px;
     display: flex;
-    /* background-image: url("../assets/landing-assets/bg2-r.png");
-    background-size: cover;
-    background-repeat: no-repeat; */
-     /* background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);; */
   }
 
 
@@ -478,10 +474,12 @@
   }
 
   .Working-model-section-2 {
-    margin: 6%;
-    /* padding: 10px; */
+    margin: 4%;
+    margin-right: 10%;
+    padding-top:50px;
     margin-top: 150px;
-    width: 50%;
+    width: 40%;
+
     
   }
 
@@ -521,23 +519,18 @@
   .Working-model-section-1{
     position: relative;
     display: inline-block;
-    background-image: url('../assets/landing-assets/Profile.png'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     transform-origin: center; 
   }
   
 
   @media (max-width: 768px) {
     .Working-model  {
-      /* background-image: url("../assets/landing-assets/bg2.jpg");
-    background-size: 1000px 500px; */
       align-items: center;
       justify-content: center;
       flex-direction: column; /* Stack the divs vertically */
-      /* background-repeat:repeat-y; */
     }
 
     .Working-model-section-2{
@@ -558,13 +551,12 @@
     background-color: #1c90fc;
     margin: 20px;
     margin-right: 5px;
-    /* margin-top: 50px; */
+    margin-top: 60px;
     border-radius: 0;
   }
 
   .working-side-button2{
     margin: 20px;
-    /* margin-top: 50px; */
     border-radius: 0;
     background-color: #000;
     color:#1c90fc;
@@ -612,11 +604,17 @@
 
 
 
-/* .section-2image {
-    background: linear-gradient(to right, rgba(105, 9, 9, 0), rgba(86, 57, 57, 0.5), rgba(113, 29, 8, 0));
-    animation: tilt linear 5s infinite;
+ .section-2image {
+  border-width: 5px;
+  border-color: #1c90fc;
+    width: 90%;
+    margin-left: 70px;
 }
 
+.line-design{
+  margin-left: 9%;
+}
+/*
 .section-2image:hover:before {
     animation: shine linear 5s infinite;
 }

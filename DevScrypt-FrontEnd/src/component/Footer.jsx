@@ -7,8 +7,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Subscription Section */}
         <div className="text-center mb-10">
-          <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-lg p-8 shadow-lg max-w-lg mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Grow your business fast with Rareblocks UI Kit.</h2>
+          <div className=" p-8  max-w-lg mx-auto">
+          {/* bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-lg p-8 shadow-lg max-w-lg mx-auto */}
+            {/* <h2 className="text-cyan-500 text-2xl font-bold mb-4">Grow your business fast with DevScrypt.</h2> */}
             <form className="flex items-center justify-center">
               <input
                 type="email"

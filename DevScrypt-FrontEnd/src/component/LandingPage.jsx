@@ -43,7 +43,7 @@ function LandingPage() {
     useEffect(() => {
         const handleScroll = (event) => {
             // Update the rotation based on scroll event
-            setRotationX((prevRotationX) => prevRotationX + event.deltaY / 10);
+            setRotationX((prevRotationX) => prevRotationX + event.deltaY / 20);
         };
 
         // Add scroll event listener
@@ -168,7 +168,7 @@ function LandingPage() {
             <div className="sec1-right">A whole world of freelance talent at your fingertips</div>
             <div className="tex1">
             <p className="author">
-              <strong>Clear, transparent pricing</strong><br />
+              <strong className="text-cyan-700">Clear, transparent pricing</strong><br />
               Pay per project or by the hour (Pro). Payments only get released when you approve.
             </p>
             </div>
@@ -205,7 +205,14 @@ function LandingPage() {
 
             </div>
 
-            <hr></hr>
+            {/* <hr></hr> */}
+            <span
+    className="line-design absolute h-px w-5/6"
+    style={{
+      backgroundImage: 'linear-gradient(to right, transparent, #d4d4d4, transparent)',
+    }}
+    aria-hidden="true"
+  ></span>
 
 
 
@@ -220,31 +227,14 @@ function LandingPage() {
                     transform: `rotateX(${rotationX}deg)`,
                     transition: 'transform 0.1s ease-out',
                 }}>
-                    {/* <video
-                        className="video-background2"
-                        src={sampleVideo1} // Example public video URL
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                    /> */}
                     <img className="section-2image" src={image} alt="jjjjjjjjjjjjjs" />
                 </div>
-                {/* <div className="flex-item1 Working-model-section-1"
-      style={{
-        transform: `rotateX(${rotationX}deg)`,
-        transition: 'transform 0.1s ease-out',
-      }}>
-    </div>   */}
 
 
 
 
 
-                <div className="relative h-auto flex items-center justify-center">
-                    {/* Other content can go here */}
-
-                    {/* Responsive Gradient Line */}
+                {/* <div className="relative h-auto flex items-center justify-center">
                     <span
                         className="absolute w-2/3 h-px md:h-2/3 md:w-px"
                         style={{
@@ -252,11 +242,11 @@ function LandingPage() {
                         }}
                         aria-hidden="true"
                     ></span>
-                </div>
+                </div> */}
 
                 <div className="flex-item1 Working-model-section-2   ">
 
-                    <p className="Working-model-head">How Does CryptoFreelancer Works ?</p>
+                    <p className="Working-model-head">How Does DevScrypt Works ?</p>
                     <div className="Working-model-head-desc" >Marketplace with over 7,000 unique NFT rtworks and mare 1,000 independent artists
                         dummy text Lorem Ipsum has t ever since unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </div>
@@ -264,15 +254,15 @@ function LandingPage() {
                     <button type="button" className="working-side-button1 bg-opacity-0  ">Seller-Mode</button>
                     <button type="button" className="working-side-button2 bg-opacity-0  ">Seller-Mode</button>
 
-                    <button type="button" className="working-side-button3  ">
+                    {/* <button type="button" className="working-side-button3  ">
                         
-            <h3>Framer felt like a natural fit</h3>
+            <h3>DevScrypt felt like a natural fit</h3>
             <p className="author">
               <strong>Andrew Austin</strong><br />
               VP of Product at Dribbble
             </p>
             <a href="/" className="read-story">Read Dribbble's story →</a>
-            </button>
+            </button> */}
 
 
                 </div>
@@ -281,11 +271,13 @@ function LandingPage() {
             </div>
             {/* <hr></hr> */}
             <Developertestimonial />
-            <hr></hr>
-            <TestimonialSection />
-            <hr></hr>
+            {/* <hr></hr> */}
+            {/* <TestimonialSection />
+            <hr></hr> */}
             <WebsiteVisiteCounter></WebsiteVisiteCounter>
-            <ConnectedCards></ConnectedCards>
+            {/* <ConnectedCards></ConnectedCards> */}
+            <hr></hr>
+            {/* <TestimonialSection /> */}
             <Footer></Footer>
         </>
 
