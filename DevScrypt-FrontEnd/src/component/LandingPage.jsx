@@ -191,7 +191,7 @@ function LandingPage() {
               Chat with our team to get your questions answered or resolve any issues with your orders.
             </p>
             </div>
-            <a href="/" className="read-story">Read Dribbble's story →</a>
+            <a href="/" className="read-story">Read Developer's story →</a>
           </div>
         </div>
       </section>
